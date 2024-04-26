@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Cuisine Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: red;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            background-color: #990000;
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #990000;
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .blog {
+            margin-bottom: 20px;
+        }
+        .blog h2 {
+            color: red;
+        }
+        .recipe {
+            margin-bottom: 20px;
+        }
+        .recipe h2 {
+            color: red;
+        }
+        .video {
+            margin-bottom: 20px;
+        }
+        .video h2 {
+            color: red;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>African Cuisine Hub</h1>
+            <img src="data:image/png;base64,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" alt="African Cuisine Hub Logo">
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="#">Home</a>
+            <a href="#">Blogs</a>
+            <a href="#">Recipes</a>
+            <a href="#">Videos</a>
+            <a href="#">About Us</a>
+        </div>
+    </nav>
+    <section class="blog">
+        <div class="container">
+            <h2>Food Blogs</h2>
+            <img src="https://www.google.com/imgres?q=african%20dishes%20pictures&imgurl=https%3A%2F%2Fimg.taste.com.au%2Fla2YT8hO%2Ftaste%2F2016%2F11%2Fwest-african-chicken-stew-102761-1.jpeg&imgrefurl=https%3A%2F%2Fwww.taste.com.au%2Fquick-easy%2Fgalleries%2Fproof-african-dishes-amazing%2FkhIhHoOy&docid=mUaq4Ul6BdV-CM&tbnid=SLEti2WyjMGNSM&vet=12ahUKEwjO0oWM6N6FAxW4YEEAHWprAEEQM3oECHMQAA..i&w=3000&h=2000&hcb=2&ved=2ahUKEwjO0oWM6N6FAxW4YEEAHWprAEEQM3oECHMQAA"            <img src="https://www.google.com/imgres?q=african%20dishes%20pictures&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F4%2F47%2FAfrican_Dishes.jpg%2F220px-African_Dishes.jpg&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FList_of_African_dishes&docid=KwAToPtvnNdeGM&tbnid=xT8xhBmuJzvLLM&vet=12ahUKEwjO0oWM6N6FAxW4YEEAHWprAEEQM3oECFAQAA..i&w=220&h=176&hcb=2&ved=2ahUKEwjO0oWM6N6FAxW4YEEAHWprAEEQM3oECFAQAA"
+        </div>
+    </section>
+    <section class="recipe">
+        <div class="container">
+            <h2>Recipes</h2>
+            <video src="https://www.google.com/imgres?q=african%20dishes%20videos&imgurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2F0OWEqSbX1Us%2Fmaxresdefault.jpg&imgrefurl=https%3A%2F%2Fm.youtube.com%2Fwatch%3Fv%3D0OWEqSbX1Us&docid=HgSFGMhPKnV4JM&tbnid=NVgRiyOFdQ9zWM&vet=12ahUKEwjKrNzs5N6FAxWsRkEAHVMICNMQM3oECFEQAA..i&w=1280&h=720&hcb=2&ved=2ahUKEwjKrNzs5N6FAxWsRkEAHVMICNMQM3oECFEQAA"        <video src="https://www.google.com/imgres?q=african%20dishes%20videos&imgurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2FzbWL_XLzd1Q%2Fmaxresdefault.jpg&imgrefurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DzbWL_XLzd1Q&docid=lKy_N5_WzWB4LM&tbnid=VUQOYVfYSj1HwM&vet=12ahUKEwjKrNzs5N6FAxWsRkEAHVMICNMQM3oECGQQAA..i&w=1280&h=720&hcb=2&ved=2ahUKEwjKrNzs5N6FAxWsRkEAHVMICNMQM3oECGQQAA"   
+            <video src="https://www.google.com/imgres?q=african%20dishes%20videos&imgurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2FRRbbblOqIMc%2Fmaxresdefault.jpg&imgrefurl=https%3A%2F%2Fm.youtube.com%2Fwatch%3Fv%3DRRbbblOqIMc&docid=HTKQfYsrVVhSPM&tbnid=113wi-gBCgnE3M&vet=12ahUKEwjKrNzs5N6FAxWsRkEAHVMICNMQM3oECBQQAA..i&w=1280&h=720&hcb=2&ved=2ahUKEwjKrNzs5N6FAxWsRkEAHVMICNMQM3oECBQQAA"        <video src="https://www.google.com/imgres?q=african%20dishes%20videos&imgurl=https%3A%2F%2Fimg.buzzfeed.com%2Fthumbnailer-prod-us-east-1%2Fvideo-api%2Fassets%2F308650.jpg%3Foutput-format%3Dauto%26output-quality%3Dauto%26resize%3D600%3A*&imgrefurl=https%3A%2F%2Fwww.buzzfeed.com%2Fwatch%2Fvideo%2F123979&docid=DGEDJi1obbNOnM&tbnid=cwZkfG9E3RikJM&vet=12ahUKEwjKrNzs5N6FAxWsRkEAHVMICNMQM3oECGAQAA..i&w=600&h=338&hcb=2&ved=2ahUKEwjKrNzs5N6FAxWsRkEAHVMICNMQM3oECGAQAA"
+        </div>
+    </section>
+    <section class="video">
+        <div class="container">
+            <h2>Cooking Tutorial Videos</h2>
+            <video src="https://www.google.com/search?sca_esv=5fa93554276c39d0&rlz=1C1KNTJ_enNG1027NG1027&q=african+dishes+videos&tbm=vid&source=lnms&prmd=ivzbnms&sa=X&ved=2ahUKEwjKrNzs5N6FAxWsRkEAHVMICNMQ0pQJegQIDhAB&biw=1536&bih=747&dpr=1.25#"                                                                                                                                              <video src="https://www.google.com/search?sca_esv=5fa93554276c39d0&rlz=1C1KNTJ_enNG1027NG1027&q=african+dishes+videos&tbm=vid&source=lnms&prmd=ivzbnms&sa=X&ved=2ahUKEwjKrNzs5N6FAxWsRkEAHVMICNMQ0pQJegQIDhAB&biw=1536&bih=747&dpr=1.25#
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2022 African Cuisine Hub</p>
+        </div>
+    </footer>
+</body>
+</html>
